@@ -1,0 +1,14 @@
+{
+    "name": "OldSchoolChef",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "An extension to view problems with old UI on Codechef",
+    "permissions": [
+      "tabs"],
+    "content_scripts" : [{
+        "js" : ["script.js"],
+        "matches": [ "http://*/*", "https://*/*" ],
+        "run_at": "document_start"
+    }
+    ]  
+  }
